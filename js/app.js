@@ -83,11 +83,16 @@ seattle.render = function(){
   h2Element.textContent='Seattle';
   let ulElement =document.createElement('ul');
   parent.appendChild(ulElement);
-  for(let i=0;i<hours.length;i++){
+  let total = 0;
+    for(let i=0;i<hours.length;i++){
+      let liElement= document.createElement('li');
+      ulElement.appendChild(liElement);
+      liElement.textContent=hours[i]+': '+this.avgCookie()+' cookies';
+      total += this.avgCookie();
+    }
     let liElement= document.createElement('li');
     ulElement.appendChild(liElement);
-    liElement.textContent=hours[i]+' '+this.avgCookie()+' cookies';
-  }
+    liElement.textContent='Total: '+ total+' cookies';
 };
 seattle.render();
 tokyo.render = function(){
@@ -97,11 +102,16 @@ tokyo.render = function(){
     h2Element.textContent='Tokyo';
     let ulElement =document.createElement('ul');
     parent.appendChild(ulElement);
+    let total = 0;
     for(let i=0;i<hours.length;i++){
       let liElement= document.createElement('li');
       ulElement.appendChild(liElement);
-      liElement.textContent=hours[i]+' '+this.avgCookie()+' cookies';
+      liElement.textContent=hours[i]+': '+this.avgCookie()+' cookies';
+      total += this.avgCookie();
     }
+    let liElement= document.createElement('li');
+    ulElement.appendChild(liElement);
+    liElement.textContent='Total: '+ total+' cookies';
   };
   tokyo.render();
   dubai.render = function(){
@@ -111,11 +121,16 @@ tokyo.render = function(){
     h2Element.textContent='Dubai';
     let ulElement =document.createElement('ul');
     parent.appendChild(ulElement);
+    let total = 0;
     for(let i=0;i<hours.length;i++){
       let liElement= document.createElement('li');
       ulElement.appendChild(liElement);
-      liElement.textContent=hours[i]+' '+this.avgCookie()+' cookies';
+      liElement.textContent=hours[i]+': '+this.avgCookie()+' cookies';
+      total += this.avgCookie();
     }
+    let liElement= document.createElement('li');
+    ulElement.appendChild(liElement);
+    liElement.textContent='Total: '+ total+' cookies';
   };
   dubai.render();
   paris.render = function(){
@@ -125,11 +140,16 @@ tokyo.render = function(){
     h2Element.textContent='Paris';
     let ulElement =document.createElement('ul');
     parent.appendChild(ulElement);
+    let total = 0;
     for(let i=0;i<hours.length;i++){
       let liElement= document.createElement('li');
       ulElement.appendChild(liElement);
-      liElement.textContent=hours[i]+' '+this.avgCookie()+' cookies';
+      liElement.textContent=hours[i]+': '+this.avgCookie()+' cookies';
+      total += this.avgCookie();
     }
+    let liElement= document.createElement('li');
+    ulElement.appendChild(liElement);
+    liElement.textContent='Total: '+ total+' cookies';
   };
   paris.render();
   lima.render = function(){
@@ -139,11 +159,16 @@ tokyo.render = function(){
     h2Element.textContent='Lima';
     let ulElement =document.createElement('ul');
     parent.appendChild(ulElement);
+    let total = 0;
     for(let i=0;i<hours.length;i++){
       let liElement= document.createElement('li');
       ulElement.appendChild(liElement);
-      liElement.textContent=hours[i]+' '+this.avgCookie()+' cookies';
+      liElement.textContent=hours[i]+': '+this.avgCookie()+' cookies';
+      total += this.avgCookie();
     }
+    let liElement= document.createElement('li');
+    ulElement.appendChild(liElement);
+    liElement.textContent='Total: '+ total+' cookies';
   };
   lima.render();
 
