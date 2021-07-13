@@ -1,9 +1,4 @@
 'use strict';
-let image =document.getElementById('head');
-let imgElement = document.createElement('img');
-image.appendChild(imgElement);
-imgElement.setAttribute('src','./img/salmon.png')
-
 let hours= ['6am','7am','8am','9am','10am','11am','12pm','1pm','2pm','3pm','4pm','5pm','6pm','7pm'];
 let branches=[];
 function Branch(location, minCustomers, maxCustomers, avgcookies){
