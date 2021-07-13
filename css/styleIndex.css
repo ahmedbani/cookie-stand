@@ -1,0 +1,86 @@
+body{
+    background-color: #DDDDDD;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+header{
+    background-color: #125D98;
+    width: 100%;
+    height: 100px;
+}
+h1{
+    font-size: larger;
+    font-weight: bold;
+    color: #F5A962;
+}
+#headerImage{
+    width: 200px;
+    height: 80px;
+    float: left;
+}
+header nav {
+    float: right;
+    padding: 20px;
+}
+header nav ul li{
+    display: inline;
+    padding: 20px;
+    
+}
+header nav ul li a{
+
+    text-decoration: none;
+    color: #F5A962;
+}
+a:hover{
+    background-color: #b65c08;
+}
+h2{
+    font-size: x-large;
+    color: #125D98;
+    
+}
+p{
+    font-weight: bold;
+}
+div ul li{ 
+    margin-left: 20px;
+    list-style-image: url('/img/fish.jpg');
+    display: list-item;
+}
+.about-us-images{
+    width: 25%;
+    height: 150px;
+}
+#familyImage{
+    width: 50%;
+    height: 150px;
+}
+
+#footerImage{
+    width: 25%;
+    height: 80px;
+    float:right;
+}
+h3{
+    font-size: larger;
+    color: #125D98;
+}
+a{
+    text-decoration: none;
+    color: #F5A962;
+}
+#salmonShirt{
+    width: 25%;
+    height: 150px;
+}
+footer div img {
+    width: 200px;
+    height: 80px;
+}
+footer{
+    background-color: #125D98;
+    width: 100%;
+    height: 100px;
+}
+
